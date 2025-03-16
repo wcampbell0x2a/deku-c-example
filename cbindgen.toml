@@ -1,0 +1,10 @@
+language = "C"
+pragma_once = true
+style = "tag"
+
+[struct]
+rename_fields = "LowerCase"
+
+[enum]
+rename_variants = "LowerCase"
+prefix_with_name = true

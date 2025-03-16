@@ -1,0 +1,14 @@
+[package]
+name = "deku-c-example"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+deku = { version = "0.18.1", default-features = false, features = ["std", "alloc"]}
+
+[profile.release]
+panic = "abort"
+lto = true
+
+[lib]
+crate-type = ["staticlib"]
